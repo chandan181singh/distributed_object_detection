@@ -26,8 +26,8 @@ This project parallelizes the computationally intensive task of real-time object
 
 1. Clone this repository:
 ```
-git clone https://github.com/yourusername/distributed_detection.git
-cd distributed_detection
+git clone https://github.com/yourusername/distributed_object_detection.git
+cd distributed_object_detection
 ```
 
 2. Install dependencies:

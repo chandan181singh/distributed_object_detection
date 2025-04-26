@@ -14,14 +14,14 @@ with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name="distributed_detection",
+    name="distributed_object_detection",
     version="0.1.0",
     description="Distributed real-time object detection using MPI, OpenCV, and CUDA",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Chandan Kumar",
     author_email="chandan181singh@gmail.com",
-    url="https://github.com/chandan181singh/distributed_detection",
+    url="https://github.com/chandan181singh/distributed_object_detection",
     packages=find_packages(),
     python_requires=">=3.7",
     install_requires=requirements,
@@ -39,7 +39,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "distributed-detection=distributed_detection.src.main:main",
+            "distributed-detection=distributed_object_detection.src.main:main",
         ],
     },
 ) 
