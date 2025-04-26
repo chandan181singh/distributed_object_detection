@@ -12,7 +12,7 @@ import time
 import logging
 import numpy as np
 
-from utils import (
+from distributed_utils import (
     load_config, 
     ObjectDetector, 
     MPIHelper, 

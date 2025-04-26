@@ -10,7 +10,7 @@ import cv2
 # Add parent directory to path to import modules
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from src.utils.detection import ObjectDetector
+from src.distributed_utils.detection import ObjectDetector
 
 class TestObjectDetection(unittest.TestCase):
     """

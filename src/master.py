@@ -12,8 +12,9 @@ import time
 import logging
 import numpy as np
 from collections import deque
+from mpi4py import MPI
 
-from utils import (
+from distributed_utils import (
     load_config, 
     VideoCapture, 
     FrameDisplay, 

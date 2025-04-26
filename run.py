@@ -50,13 +50,22 @@ def run_distributed(config_path, hosts, num_processes):
     """
     try:
         # Build command
-        cmd = [
-            'mpiexec',
-            '-n', str(num_processes),
-            '-hosts', hosts,
-            'python', 'src/main.py',
-            '--config', config_path
-        ]
+        if hosts == "localhost":
+            cmd = [
+                'mpiexec',
+                '-n', str(num_processes),
+                'python', 'src/main.py',
+                '--config', config_path
+            ]
+        else:
+            # Use -hosts for distributed execution
+            cmd = [
+                'mpiexec',
+                '-hosts', hosts,
+                'python', 'src/main.py',
+                '--config', config_path
+            ]
+
         
         # Log command
         logger.info(f"Running command: {' '.join(cmd)}")

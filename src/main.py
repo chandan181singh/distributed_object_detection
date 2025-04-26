@@ -7,7 +7,7 @@ import argparse
 import logging
 from mpi4py import MPI
 
-from utils import setup_logging
+from distributed_utils import setup_logging
 from master import Master
 from worker import Worker
 
