@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Model files
+models/
+*.pt
+*.weights
+*.pb
+*.pbtxt
+
+# Images and videos
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Config
+config.yaml
+
+# Cache files
+.cache/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints 
